@@ -1,0 +1,406 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you","Hey", "Hello"],
+         "responses": ["Hello, I'm your HR Chatbot how may I help?", "Hi there, how can I help?","Hello, I'm your HR Chatbot how may I help?", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.","Bye! Come back again soon.","Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?"],
+         "responses": ["I can guide you through HR policy for Firms in India, some of the HR policies in India are:\n- Car Lease Policy \n- Employment Contracts \n- Code of Conduct \n- Employee Wages \n- Menstrual Leave Policy \n- Gratuity Policy \n- Employee Provident Fund", "I can help you understand HR policies better.Some of HR policies in India are:\n- Car Lease Policy \n- Employment Contracts \n- Code of Conduct \n- Employee Wages \n- Menstrual Leave Policy \n- Gratuity Policy \n- Employee Provident Fund"],
+         "context": [""]
+        },
+        {
+          "tag": "HR",
+          "patterns": [
+            "What important HR policies?",
+            "Which HR policies should a company have?",
+            "Can you list some important HR policies?"
+          ],
+          "responses": ["The most important HR policies in India are:\n- Car Lease Policy \n- Employment Contracts \n- Code of Conduct \n- Employee Wages \n- Menstrual Leave Policy \n- Gratuity Policy \n- Employee Provident Fund","The most important HR policies in India are:\n- Car Lease Policy \n- Employment Contracts \n- Code of Conduct \n- Employee Wages \n- Menstrual Leave Policy \n- Gratuity Policy \n- Employee Provident Fund","The most important HR policies in India are:\n- Car Lease Policy \n- Employment Contracts \n- Code of Conduct \n- Employee Wages \n- Menstrual Leave Policy \n- Gratuity Policy \n- Employee Provident Fund"],
+          "context": [""]
+        },
+        {
+          "tag": "Car",
+          "patterns": [
+            "What car lease policy?",
+            "How car lease policy ?",
+            "details car lease policy?"
+          ],
+          "responses": [
+            "The car lease policy offers a flexible and convenient solution for car ownership.",
+            "Employees pay a monthly lease rental based on the car's residual value, interest rate, and tenure.",
+            "Eligible employees can receive reimbursements for fuel and driver expenses.After the lease period, employees can upgrade to another car or convert their existing car into a lease."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Contracts",
+          "patterns": [
+            "What are employment contracts?",
+            "Why employment contracts importance?",
+            "Which laws for employment contracts?"
+          ],
+          "responses": [
+            "Employment contracts define the working relationship between an employee and a company.",
+            "They are crucial for understanding rules, regulations, and terms of employment.",
+            "Important laws to consider for employment contracts in India are wage laws, labour laws, the contract act, and local state's employment laws."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Conduct",
+          "patterns": [
+            "What code of conduct policy ?",
+            "Why code of conduct important?",
+            "What should be included in the code of conduct?"
+          ],
+          "responses": [
+            "The code of conduct policy includes the organization's vision, ethics, mission, and rules of work.",
+            "It helps create and maintain the right business environment for employees.",
+            "In India, it may cover equal rights, electronic usage, dress code, work environment, media policy, conflict of interest, etc.It should also include procedures for reporting breaches of the code."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Wages",
+          "patterns": [
+            "How should employee wages be managed?",
+            "What laws wages?",
+            "Why compliance for employee wages?"
+          ],
+          "responses": [
+            "Managing employee payroll and ensuring competitive and compliant wages is essential.",
+            "Important wage-related acts in India include the Minimum Wage Act, 1948, and the Payment of Wages Act, 1936.",
+            "Compliance ensures employees receive fair wages and protects the company from legal issues."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Menstrual",
+          "patterns": [
+            "What ?",
+            "Why ?",
+            "provisions for menstrual leave ?"
+          ],
+          "responses": [
+            "Menstrual leave allows women to take paid or unpaid leave during their periods.",
+            "It aims to provide better facilities for women in the workplace and reduce the challenges they face.",
+            "Under the Menstruation Benefits Bill 2017, women in public and private sectors can have up to 24 days of menstrual leave annually."
+        
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Gratuity",
+          "patterns": [
+            "What is the gratuity policy?",
+            "Why is a gratuity policy necessary?",
+            "What are the requirements for paying gratuity in India?"
+          ],
+          "responses": [
+            "The gratuity policy involves paying a token of appreciation to employees who have completed 5 years of service.",
+            "It shows appreciation for their dedication to the company.",
+            "The Payment of Gratuity Act, 1972, makes it a legal obligation to pay gratuity."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Provident",
+          "patterns": [
+            "What is the employee provident fund?",
+            "Why is an employee provident fund important?",
+            "Who needs to have an employee provident fund?"
+          ],
+          "responses": [
+            "The employee provident fund provides income security during retirement.",
+            "It offers benefits like retirement pension, medical insurance, and housing care.",
+            "Organizations with more than 10 employees are required to have a provident fund."
+      
+          ],
+          "context": [""]
+        },  {
+          "tag": "Leave",
+          "patterns": [
+            "How many leaves am I allowed to take annually?",
+            "What are the public holidays mentioned in the leave policy?",
+            "What is the percentage of salary cut for unpaid leaves or half-days?",
+            "Can you explain the leave policy?",
+            "What is the annual list of leaves mentioned in the policy?"
+          ],
+          "responses": [
+            "The leave policy provides information on the number of leaves an employee can take annually.",
+            "It also includes a list of public holidays.",
+            "The policy mentions the percentage of salary cut for unpaid leaves or half-days.",
+            "The policy ensures clarity on leave entitlements for employees.",
+            "It also outlines the annual list of leaves that employees will receive."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Sexual Harassment",
+          "patterns": [
+            "Why is a sexual harassment policy important?",
+            "What does the sexual harassment policy include?",
+            "What is the requirement for setting up an Internal Complaints Committee?",
+            "How does the sexual harassment act protect employees?"
+          ],
+          "responses": [
+            "A sexual harassment policy is crucial for creating a safe workplace environment for women.",
+            "It outlines the steps and measures to address sexual harassment complaints.",
+            "The policy includes the requirement for setting up an Internal Complaints Committee.",
+            "The Sexual Harassment Act protects employees, interns, visitors, and customers."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Maternity and Paternity",
+          "patterns": [
+            "What are the benefits outlined in the maternity benefits act?",
+            "What is the duration of paid maternity leave under the act?",
+            "Is there legislation for paternity leave in India?",
+            "What does the Paternity Benefit Bill entail?",
+            "How has the paternity leave bill been received?"
+          ],
+          "responses": [
+            "The Maternity Benefits Act, 2017 outlines the benefits and leaves for pregnant women.",
+            "It includes a 26-week paid leave for the first two children and 12-week leave subsequently.",
+            "While there is no legislation for paternity leave, the Paternity Benefit Bill was upheld in 2017.",
+            "The bill aims to provide paternity benefits and promote equality for both parents.",
+            "The bill has been applauded by citizens and contributes to the conversation on equality."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Termination",
+          "patterns": [
+            "Why is it important to have a termination of employment policy?",
+            "What procedures should be followed for termination?",
+            "Can companies terminate employees without notice?",
+            "What should be included in a comprehensive termination policy?",
+            "How does a termination policy help HR personnel?"
+          ],
+          "responses": [
+            "A termination of employment policy provides guidance for letting employees go.",
+            "It ensures compliance with federal laws, such as providing notice to employees.",
+            "Companies are generally not allowed to terminate employees without notice.",
+            "A comprehensive termination policy should address legal requirements and emotional considerations.",
+            "Having a proper termination policy helps HR personnel handle such situations appropriately."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Culture",
+          "patterns": [
+            "Why is having an adaptive work culture important?",
+            "What are some examples of flexible work options?",
+            "Is it a legal requirement to have an adaptive work culture?",
+            "How does an adaptive work culture benefit employees?",
+            "Why should an adaptive work culture be included in HR policies?"
+          ],
+          "responses": [
+            "Having an adaptive work culture is important for accommodating changing work patterns.",
+            "Examples of flexible work options include work-from-home and 5-day work weeks.",
+            "While not a legal requirement, it is beneficial to adapt to the changing times.",
+            "An adaptive work culture improves employee productivity and engagement.",
+            "Including an adaptive work culture policy emphasizes the importance of flexibility."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Communications",
+          "patterns": [
+            "What does a communications policy include?",
+            "Which communication channels are covered in the policy?",
+            "How should existing technology and communication channels be updated?",
+            "Why is a communications policy necessary?",
+            "What are the mechanisms for maintaining open communication?"
+          ],
+          "responses": [
+            "A communications policy includes guidelines for various communication channels.",
+            "It covers e-mails, mobile phone usage, telephones, notice boards, and memos.",
+            "Existing technology and communication channels should be updated regularly.",
+            "A communications policy is necessary to establish and maintain open communication.",
+            "The policy should define mechanisms for keeping communication channels updated."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Nondiscrimination",
+          "patterns": [
+            "What forms of discrimination does the policy address?",
+            "Which articles grant the right to be treated equally without discrimination?",
+            "Why is it important to have a nondiscrimination policy?",
+            "What are the repercussions of discrimination?",
+            "Why should organizations state the repercussions in the policy?"
+          ],
+          "responses": [
+            "The nondiscrimination policy addresses discrimination based on various factors.",
+            "Articles 14, 15, and 16 grant the right to be treated equally without discrimination.",
+            "Having a nondiscrimination policy is important to ensure employee rights and fairness.",
+            "Repercussions of discrimination can include disciplinary action and legal consequences.",
+            "Stating the repercussions in the policy emphasizes the organization's commitment to equality."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Dress",
+          "patterns": [
+            "What is the purpose of a dress code policy?",
+            "How does a dress code policy promote professionalism?",
+            "Why is it important to have guidelines for appropriate attire at work?",
+            "What does a good dress code policy entail?",
+            "How does a dress code policy contribute to the work culture?"
+          ],
+          "responses": [
+            "A dress code policy promotes professionalism and creates a better work environment.",
+            "It ensures employees are appropriately dressed for meetings and maintains a professional image.",
+            "Having guidelines for appropriate attire is important for setting standards at work.",
+            "A good dress code policy includes clear guidelines for acceptable clothing.",
+            "The policy contributes to the overall work culture by promoting a professional appearance."
+          ],
+          "context": [""]
+        },
+        {
+          "tag": "Probation",
+          "patterns": [
+            "Why do companies have probation periods?",
+            "What is the duration of a typical probation period?",
+            "What is the purpose of a probation and confirmation policy?",
+            "Are probation periods mandatory for all employees?",
+            "How does a probation period benefit both the company and the employee?"
+          ],
+          "responses": [
+            "Companies have probation periods to assess employee performance and suitability.",
+            "The duration of a probation period is typically three months or more.",
+            "The probation and confirmation policy serves to guide the employee evaluation process.",
+            "Probation periods are mandatory for all employees in an organization.",
+            "A probation period benefits the company by evaluating the employee's fit and helps the employee understand the work environment and workload."
+          ],
+          "context": [""]
+        },   {
+          "tag": "Work from Home",
+          "patterns": [
+          "What is a Work from Home policy?",
+          "What should be specified in a Work from Home policy?",
+          "Are there any laws regarding Work from Home policies?",
+          "How can an employee apply for the privilege of working from home?",
+          "Who is eligible for the privilege of working from home?"
+          ],
+          "responses": [
+          "A Work from Home policy grants employees the privilege of working from home.",
+          "The policy should specify work timings, deliverables, and procedures.",
+          "There are no specific laws regarding Work from Home policies.",
+          "Employees can apply for the privilege of working from home through a specified procedure.",
+          "The policy should clearly mention who is eligible for the privilege of working from home."
+          ],
+          "context": [""]
+          },
+          {
+          "tag": "Grievance",
+          "patterns": [
+          "What is the requirement for setting up a Grievance Redressal Committee?",
+          "What types of grievances should be addressed in the policy?",
+          "Why are HR policies like the grievance policy important for organizations?",
+          "What is the purpose of a grievance policy?",
+          "How should grievances be resolved according to the policy?"
+          ],
+          "responses": [
+          "As per the Industrial Disputes Act, employers employing at least 20 workmen must set up a Grievance Redressal Committee.",
+          "Grievances regarding job harassment, sexual misconduct, unfair decisions, etc., should be addressed in the policy.",
+          "HR policies like the grievance policy are important for the growth and proper functioning of an organization.",
+          "The purpose of a grievance policy is to hear and resolve employee grievances.",
+          "The policy should outline the procedure for resolving grievances."
+          ],
+          "context": [""]
+          },
+          {
+          "tag": "Awards and Recognition",
+          "patterns": [
+          "What is the purpose of an Awards and Recognition policy?",
+          "How does the policy encourage employees to improve their performance?",
+          "What types of rewards can be given under the policy?",
+          "How are the awards and recognition milestones determined?",
+          "Is the reward always monetary?"
+          ],
+          "responses": [
+          "The Awards and Recognition policy rewards employees for outstanding performance.",
+          "The policy encourages employees to improve their performance individually or as a team.",
+          "The rewards can be both monetary and non-monetary.",
+          "The awards and recognition milestones are determined based on the company's vision and objectives.",
+          "The reward can be monetary or non-monetary, depending on the policy."
+          ],
+          "context": [""]
+          },
+          {
+          "tag": "Travel",
+          "patterns": [
+          "Why is a Travel policy necessary?",
+          "What costs are reimbursed under the policy?",
+          "What are the requirements for filing for reimbursement?",
+          "Who has the authority to authorize travel?",
+          "Are there any exceptions to the travel policy?"
+          ],
+          "responses": [
+          "A Travel policy is necessary for employees required to travel for business-related work.",
+          "The policy reimburses the employee for business-approved travel costs.",
+          "The policy should specify the requirements for filing for reimbursement.",
+          "The authorization authority for travel should be mentioned in the policy.",
+          "The policy should outline any exceptions to the travel reimbursement."
+          ],
+          "context": [""]
+          },
+          {
+          "tag": "Performance",
+          "patterns": [
+          "What is the purpose of a performance management policy?",
+          "How is an employee's performance managed?",
+          "What is the difference between performance management and performance appraisal?",
+          "How often should performance appraisal be conducted?",
+          "What tools and techniques are used in performance management?"
+          ],
+          "responses": [
+          "The purpose of a performance management policy is to provide employees with clear performance expectations.",
+          "An employee's performance is managed through various tools, techniques, and processes.",
+          "Performance management includes identifying, measuring, managing, and developing employee performance.",
+          "Performance appraisal is an ongoing process of evaluating an employee's performance.",
+          "Performance appraisal should be a part of regular monthly HR processes."
+          ],
+          "context": [""]
+          },
+          {
+          "tag": "Hiring",
+          "patterns": [
+          "What is a hiring policy?",
+          "What rules and regulations does a hiring policy outline?",
+          "Why do hiring policies differ between companies?",
+          "What are the key components of a hiring policy?",
+          "How are hiring decisions made according to the policy?"
+          ],
+          "responses": [
+          "A hiring policy outlines the rules and regulations for recruiting, interviewing, and making hiring decisions.",
+          "The policy may differ between companies based on their specific needs.",
+          "Hiring policies are changed according to the company's requirements.",
+          "Key components of a hiring policy include recruitment procedures, interview guidelines, and decision-making criteria.",
+          "Hiring decisions are made based on the guidelines and criteria specified in the policy."
+          ],
+          "context": [""]
+          }
+
+
+   ]
+}
