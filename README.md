@@ -3,7 +3,8 @@ The chatbot provides a centralized platform for HR policies, ensuring easy acces
 
 Step 1 - Create a virtual enviroment and Run the following line in the command prompt 
 
----->    pip install tensorflow, keras, nltk
+     "pip install tensorflow, keras, nltk"
 
 Step 2 - Run python chatgui.py
+
 
