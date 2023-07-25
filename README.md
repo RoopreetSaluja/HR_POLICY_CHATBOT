@@ -16,8 +16,5 @@ Step 4 - GUI - You can start entering your queries
 
 
 
-![WORKING](https://github.com/RoopreetSaluja/HR_POLICY_CHATBOT/assets/73687301/ab8b22ad-05b7-4b7f-af3e-8f5bfb400901)
-
-
-
+https://github.com/RoopreetSaluja/HR_POLICY_CHATBOT/assets/73687301/7b8b7ec9-cf85-467a-a0e9-fdca02ed64b4
 
